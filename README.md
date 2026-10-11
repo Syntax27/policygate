@@ -1,8 +1,6 @@
 # PolicyGate
 
-A small application-access gateway built with Python and FastAPI. It checks a signed token, evaluates a role/method/route policy, forwards allowed requests to one local demo backend, and records authorization decisions as JSON.
-
-This is a local educational prototype. It is not affiliated with Zscaler and is not a production zero-trust product. It was developed with AI assistance; the code and tests are intended to be read, modified, and explained by the portfolio owner.
+A Python/FastAPI application-access gateway with signed-token validation, role-based route policies, controlled upstream forwarding, and structured authorization logs.
 
 ## What it demonstrates
 
@@ -91,7 +89,6 @@ Disable Uvicorn's access log as shown above: ordinary web access logs can includ
 - `policygate/issue_token.py`: local token CLI.
 - `tests/`: authentication, authorization, forwarding, error, and logging checks.
 - `scripts/demo.py`: reproducible live HTTP walkthrough.
-- `docs/LEARNING_GUIDE.md`: explanations, exercises, and interview preparation.
 - `docs/VALIDATION.md`: recorded test environment and actual results.
 
 ## Scope and limitations
